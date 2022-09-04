@@ -1,0 +1,21 @@
+[server]
+10.0.0.1
+
+[all:vars]
+ansible_user=ubuntu
+ansible_port=22
+ansible_ssh_private_key_file="~/.ssh/id_rsa"
+network="stride"
+denomination="ustrd"
+threshold="1000"
+daemon="strided"
+chain_id="stride-1"
+transaction_extra_flag=""
+key=KEY
+passphrase=PASSWORD
+
+# Optional Cron Task
+cron=true
+auto_compounder_minute="1"
+auto_compounder_hour="*"
+auto_compounder_day="*"

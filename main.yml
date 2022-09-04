@@ -1,0 +1,6 @@
+---
+- name: Main
+  hosts: all
+  gather_facts: false
+  roles:
+    - auto_compounder
